@@ -1,8 +1,4 @@
-print ("ola mundo")
-
-print (20*5)
-
-print("hello world")
+print ("Testando o IF e ELSE")
 
 if 2>5:
     print("É maior")
