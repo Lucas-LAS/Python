@@ -13,7 +13,7 @@ for i in dados:
     
     if (i != " "):
      dicionario = dicio.index(i)
-     criptografada += dicio[dicionario+logica_de_césar]
+     criptografada += dicio[(dicionario+logica_de_césar) % 26 ]
     else:
             (i==" ")
             criptografada += i
