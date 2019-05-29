@@ -12,23 +12,21 @@ print (dados)
 
 criptografada = ""
 for i in dados:
-        if ((i != " ") and (i != ".")):
+        if (i.isalpha() == True) :# isalpha verifica se letra ou não se for letra o valor passado e true (verdadeiro ) para caracteres especial, número e espaço o valor passado e false(falso)
            dicionario = dicio.index(i)
            criptografada += dicio[(dicionario+logica_de_césar) % len(dicio) ] # módulo para realizar um giro na lista 
         else:
-                ((i == " ") or (i == "."))
-                criptografada += i
+               criptografada += i
 
 print(criptografada)
 
 
 Descriptando = ""
 for i in criptografada:
-        if ((i != " ") and (i != ".")):
+        if (i.isalpha() == True) :
            dicionario = dicio.index(i)
            Descriptando += dicio[(dicionario-logica_de_césar)% len(dicio)]
         else:
-              ((i == " ") or (i == "."))
               Descriptando +=i
 print(Descriptando)
 
